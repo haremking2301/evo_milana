@@ -1,9 +1,14 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
+import useScrollToTop from '../../hooks/useScrollToTop'
+import AllProducts from '../../components/AllProducts/AllProducts'
 
 function ProductsPage() {
+    useScrollToTop()
     return (
         <div>
-            ProductPages
+            <img src={ require('../../source/img/bannerProduct.png') }></img>
+            <AllProducts></AllProducts>
         </div>
     )
 }

@@ -7,7 +7,6 @@ const Intro = () => {
     const handleSpeaker = function(e) {
         setIsSpeaker(!isSpeaker) 
     }
-
     useEffect(()=>{
 
         if(isSpeaker){

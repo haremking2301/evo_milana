@@ -1,0 +1,15 @@
+.box-shadow-z {
+    box-shadow: 3px 3px 3px #656565;
+}
+
+input:checked + label {
+    color: #f2475f !important;
+}
+
+input:checked + .box-shadow-z {
+    border-color: #f2475f !important;
+}
+
+input:hover + .box-shadow-z {
+    box-shadow: 3px 3px 3px #f2475f;
+}
