@@ -1,0 +1,21 @@
+input:checked + div {
+    transition: all 0.2s ease-in-out;
+    scale: 1.1;
+}
+
+.inputSize:checked + div {
+    color: #f67e8f;
+    border-color: #f67e8f;
+}
+
+.ant-input-number-input {
+    text-align: center !important;
+}
+
+.ant-input-number.css-dev-only-do-not-override-1m62vyb:hover {
+    border-color: #f67e8f !important;
+}
+
+.ant-input-number.css-dev-only-do-not-override-1m62vyb.ant-input-number-focused {
+    border-color: #f67e8f !important;
+}

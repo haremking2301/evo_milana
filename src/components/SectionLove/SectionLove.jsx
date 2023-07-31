@@ -3,7 +3,7 @@ import { BsExplicit } from 'react-icons/bs'
 import '../../components/SectionLove/style.scss'
 
 function SectionLove() {
-    const [ productType, setProductType ] = useState(1)
+    const [ productType, setProductType ] = useState('dresses')
     const handleChange = (e) => {
         setProductType(e.target.value)
     }
@@ -29,7 +29,7 @@ function SectionLove() {
             </div>
             <form className='mt-[10px] flex flex-wrap justify-evenly'>
                 <div className='relative mt-[20px]'>
-                    <input ref={inputRef} onChange={handleChange} value={1} className='input-check absolute h-full w-full cursor-pointer z-10 opacity-0' type='radio' name='type'></input>
+                    <input ref={inputRef} onChange={handleChange} value={'dresses'} className='input-check absolute h-full w-full cursor-pointer z-10 opacity-0' type='radio' name='type'></input>
                     <label className='transition-all ease-in-out duration-300 box-shadow-z rounded-sm border-solid border-[2px] border-[#7c87a0] px-[10px] py-[5px] font-semibold'>TRANG PHỤC</label>
                 </div>
                 <div className='relative mt-[20px]'>

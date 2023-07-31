@@ -1,9 +1,16 @@
 export const APP_ROUTES = {
     HOME_PAGE: '/home',
     PRODUCT_PAGE: '/products',
+    PRODUCT_SEARCH_PAGE: '/products/search/:search',
+    PRODUCT_DETAILS_PAGE: '/products/details/:id',
     NEWS_PAGE: '/news',
     CONTACT_PAGE: '/contact',
     INTRODUCES_PAGE: '/instructions',
     LOGIN_PAGE: '/acount/login',
-    REGISTER_PAGE: '/acount/register'
+    REGISTER_PAGE: '/acount/register',
+    ACCOUNT: '/account',
+    ACCOUNT_PAGE: '/account/profile',
+    ACCOUNT_ORDER_PAGE: '/account/order',
+    ACCOUNT_ADRESS_PAGE: '/account/adress',
+    ACCOUNT_PASSWORD_PAGE: '/account/password',
 }

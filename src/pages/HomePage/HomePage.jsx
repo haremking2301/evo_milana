@@ -3,6 +3,7 @@ import Intro from '../../components/Intro/Intro'
 import SectionMenu from '../../components/SectionMenu/SectionMenu'
 import useScrollToTop from '../../hooks/useScrollToTop'
 import SectionLove from '../../components/SectionLove/SectionLove'
+import News from '../../components/News/News'
 
 function HomePage() {
     useScrollToTop()
@@ -11,6 +12,7 @@ function HomePage() {
             <Intro></Intro>
             <SectionMenu></SectionMenu>
             <SectionLove></SectionLove>
+            <News></News>
         </div>
     )
 }

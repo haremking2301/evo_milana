@@ -10,6 +10,13 @@ import NewsPage from './pages/NewsPage/NewsPage';
 import ContactPage from './pages/ContactPage/ContactPage';
 import LoginPage from './pages/LoginPage/LoginPage';
 import RegisterPage from './pages/RegisterPage/RegisterPage';
+import ProductPageDetails from './pages/ProductPageDetails/ProductPageDetails';
+import SearchProduct from './pages/SearchProduct/SearchProduct';
+import AccountPage from './pages/AccountPage/Account/AccountPage';
+import AccountOder from './pages/AccountPage/AccountOrder/AccountOrder';
+import AccountLayout from './layouts/AccountLayout/AccountLayout';
+import AccountPassword from './pages/AccountPage/AccountPassword/AccountPassword';
+import AccountAdress from './pages/AccountPage/AccountAdress/AccountAdress';
 
 function App() {
   return (
@@ -24,6 +31,15 @@ function App() {
         <Route path={APP_ROUTES.CONTACT_PAGE} element={<ContactPage></ContactPage>}></Route>
         <Route path={APP_ROUTES.LOGIN_PAGE} element={<LoginPage></LoginPage>}></Route>
         <Route path={APP_ROUTES.REGISTER_PAGE} element={<RegisterPage></RegisterPage>}></Route>
+        <Route path={APP_ROUTES.PRODUCT_DETAILS_PAGE} element={<ProductPageDetails></ProductPageDetails>}></Route>
+        <Route path={APP_ROUTES.PRODUCT_SEARCH_PAGE} element={<SearchProduct></SearchProduct>}></Route>
+        <Route path={APP_ROUTES.ACCOUNT} element={<AccountLayout></AccountLayout>}>
+          <Route index element={<AccountPage></AccountPage>}></Route>
+          <Route path={APP_ROUTES.ACCOUNT_PAGE} element={<AccountPage></AccountPage>}></Route>
+          <Route path={APP_ROUTES.ACCOUNT_ORDER_PAGE} element={<AccountOder></AccountOder>}></Route>
+          <Route path={APP_ROUTES.ACCOUNT_PASSWORD_PAGE} element={<AccountPassword></AccountPassword>}></Route>
+          <Route path={APP_ROUTES.ACCOUNT_ADRESS_PAGE} element={<AccountAdress></AccountAdress>}></Route>
+        </Route>
       </Routes>
       <Footer></Footer>
     </div>

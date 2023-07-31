@@ -5,7 +5,10 @@ import { BsExplicit } from 'react-icons/bs'
 import { Pagination, Select, Space } from 'antd';
 import '../../components/AllProducts/style.scss'
 import { useDispatch, useSelector } from 'react-redux';
-import { getItemsProductsThunk } from '../../redux/reducers/getAllProducts';
+import { getItemsProductsThunk, pageNumberReducer } from '../../redux/reducers/getAllProducts';
+import { Link } from 'react-router-dom';
+import { APP_ROUTES } from '../../constants/routes';
+import useScrollToTop from '../../hooks/useScrollToTop';
 
 
 const handleChange = (value) => {
@@ -13,6 +16,7 @@ const handleChange = (value) => {
 };
 
 function AllProducts() {
+    useScrollToTop()
     // Lấy danh sách và render
     const dispatch = useDispatch()
     const allProducts = useSelector((state) => state.allProducts.dataItems)
@@ -20,7 +24,6 @@ function AllProducts() {
     // Xử lý hover
     const handleHover = (e) => {
         const img2 = allProducts.map((product) => product.img2);
-        console.log(img2);
         e.target.src = img2[e.target.id]
     }
     const handleHoverOut = (e) => {
@@ -29,14 +32,15 @@ function AllProducts() {
     }
 
     // Xử lý page
+    const pageNumber = useSelector((state) => state.allProducts.pageNumber)
     const totalPages = useSelector((state) => state.allProducts.totalPages)
-    console.log(totalPages)
     const [page, setPage] = useState({
-        currentPage: 1,
+        currentPage: pageNumber,
         limitPage: 15,
     })
 
     const handleChangePage = (number) => {
+        dispatch(pageNumberReducer(number))
         setPage({
             ...page,
             currentPage: number
@@ -48,6 +52,10 @@ function AllProducts() {
             _page: page.currentPage,
             _limit: page.limitPage
         }))
+        window.scrollTo({
+            top: 680,
+            behavior: `smooth`
+        })
     }, [page.currentPage])
     return (
         <div>
@@ -222,8 +230,10 @@ function AllProducts() {
                         {product.salePrice ? <div className='absolute right-[10px] w-[34px] h-[34px] bg-[#f20808] text-[15px] text-white text-center'>
                         <p className='my-[5px] sale-product'>{product.salePrice}%</p>
                         </div> : ''}
-                        <img onMouseOver={handleHover} onMouseOut={handleHoverOut} id={index} className='cursor-pointer transition-all ease-in-out duration-500 h-[70%] w-full object-cover' src={product.img1}></img>
-                        <span className='float-left text-[15px] text-[#f20808] mt-[10px] font-medium'>{product.price}đ</span>
+                        <Link to={`${APP_ROUTES.PRODUCT_DETAILS_PAGE}${product.id}`}>
+                            <img onMouseOver={handleHover} onMouseOut={handleHoverOut} id={index} className='cursor-pointer transition-all ease-in-out duration-500 h-[70%] w-full object-cover' src={product.img1}></img>
+                        </Link>
+                        <span className='float-left text-[15px] text-[#f20808] mt-[10px] font-medium'>{(product.price > 999)? `${product.price}`.slice(0,1) + '.' + `${product.price}`.slice(1,4) : `${product.price}`}.000đ</span>
                         {product.defaultPrice ? <span className='float-left text-[15px] text-[#7a7a7a] mt-[10px] font-light ml-[15px] line-through'>{product.defaultPrice}đ</span> : ''}
                         <br></br>
                         <p className='text-left float-left mt-[2px] w-full cursor-pointer text-[14px]'>{product.title}</p>
