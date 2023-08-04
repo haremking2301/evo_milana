@@ -72,7 +72,7 @@ function ProductPageDetails() {
     (state) => state.allProducts.isLoadingDetails
 );
 useEffect(() => {
-    dispatch(getItemsDetailsThunk(id.slice(3)));
+    dispatch(getItemsDetailsThunk(id));
 }, []);
 
 	return (

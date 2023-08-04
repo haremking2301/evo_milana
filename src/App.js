@@ -17,6 +17,7 @@ import AccountOder from './pages/AccountPage/AccountOrder/AccountOrder';
 import AccountLayout from './layouts/AccountLayout/AccountLayout';
 import AccountPassword from './pages/AccountPage/AccountPassword/AccountPassword';
 import AccountAdress from './pages/AccountPage/AccountAdress/AccountAdress';
+import PaymentPage from './pages/PaymentPage/PaymentPage';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           <Route path={APP_ROUTES.ACCOUNT_PASSWORD_PAGE} element={<AccountPassword></AccountPassword>}></Route>
           <Route path={APP_ROUTES.ACCOUNT_ADRESS_PAGE} element={<AccountAdress></AccountAdress>}></Route>
         </Route>
+        <Route path={APP_ROUTES.PAYMENT_PAGE} element={<PaymentPage></PaymentPage>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

@@ -12,6 +12,7 @@ import { Empty, Input } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
 import { searchReducer } from '../../redux/reducers/getAllProducts';
 import { deleteProductReducer, inCriseProductReducer, miniusProductReducer } from '../../redux/reducers/cartSlice';
+import { toast } from 'react-toastify';
 
 function Header() {
     // Xử lý search
@@ -86,6 +87,24 @@ function Header() {
     const handleMiniusQuantity = function(e) {
         dispatch(miniusProductReducer(e.target.value))
     }
+
+    const handlePayment = function(e) {
+        if (isAccountActive === null) {
+            toast.warn("Vui lòng đăng nhập để thực hiện chức năng", {
+                position: "top-left",
+                autoClose: 4000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+            });
+        } else {
+            setIsCart(!isCart);
+            navigate(APP_ROUTES.PAYMENT_PAGE)
+        }
+    }
     // Xử lý số lượng sản phẩm
 
     const handleDelete = function(e) {
@@ -94,7 +113,7 @@ function Header() {
 
     return (
     <div className='relative'>
-        <div className={'fixed transition-all ease-in-out duration-500 h-full bg-black opacity-30 z-20 ' + `${isSearch? 'w-full' : 'w-0'}`}>
+        <div className={'fixed transition-all ease-in-out duration-500 h-full bg-black opacity-30 z-31 ' + `${isSearch? 'w-full' : 'w-0'}`}>
 
         </div>
         <div className={'w-[350px] min-h-screen z-40 bg-white fixed px-[20px] transition-all ease-in-out duration-500 py-[20px] ' + `${isSearch ? 'right-[0]' : 'right-[-100%]'}`}>
@@ -104,7 +123,7 @@ function Header() {
             </div>
             <Input onChange={handleSearch} onKeyDown={handleEnter} placeholder="Nhập tên sản phẩm" />
         </div>
-        <div className={'fixed transition-all ease-in-out duration-500 h-full bg-black opacity-30 z-20 ' + `${isCart? 'w-full' : 'w-0'}`}>
+        <div className={'fixed transition-all ease-in-out duration-500 h-full bg-black opacity-30 z-40 ' + `${isCart? 'w-full' : 'w-0'}`}>
 
         </div>
         <div className={'w-[350px] min-h-screen z-40 bg-white fixed transition-all ease-in-out duration-500 py-[20px] ' + `${isCart ? 'right-[0]' : 'right-[-100%]'}`}>
@@ -141,13 +160,13 @@ function Header() {
                     </div>
                 </div>)): <Empty description='Giỏ hàng trống' />}
             </div>
-            <div className='border-t-2 px-[20px]'>
+            {(cartProducts.length !==0)? <div className='border-t-2 px-[20px]'>
                 <div className='mt-[10px] flex justify-between'>
                     <p className='font-semibold'>Tổng tiền:</p>
                     <p className='text-[16px] text-red-600 font-semibold'>{(total > 999)? `${total}`.slice(0,`${total}`.length - 3) + '.' + `${total}`.slice(-3) : `${total}`}.000đ</p>
                 </div>
-                <button className='w-full bg-[#cd5c6d] text-white font-semibold py-2 mt-4 hover:bg-[#e82442] transition-all ease-in-out'>Thanh toán</button>
-            </div>
+                <button onClick={handlePayment} className='w-full bg-[#cd5c6d] text-white font-semibold py-2 mt-4 hover:bg-[#e82442] transition-all ease-in-out'>Thanh toán</button>
+            </div> : <div></div>}
         </div>
         <nav ref={headerRef} className='h-[80px] bg-[#e8e7e8] opacity-70 items-center flex flex-row justify-between px-6 fixed top-0 left-0 right-0 z-10'>
             <div className='lg:basis-5/24'>

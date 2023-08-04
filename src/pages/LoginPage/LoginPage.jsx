@@ -48,7 +48,7 @@ function LoginPage() {
                 theme: "light",
                 })
         } else {
-            const isPassword = dataUsersLogin[0].password.includes(data.password)
+            const isPassword = (dataUsersLogin[0].password === data.password)
             if (isPassword) {
                 dispatch(accountReducer(data.email))
                 sessionStorage.setItem('isAccountActive', data.email)

@@ -13,3 +13,15 @@ input:checked + .box-shadow-z {
 input:hover + .box-shadow-z {
     box-shadow: 3px 3px 3px #f2475f;
 }
+
+.slick-prev {
+    color: #656565 !important;
+    background-color: #8e8b8b !important;
+    border-radius: 50%;
+}
+
+.slick-next {
+    color: #656565 !important;
+    background-color: #8e8b8b !important;
+    border-radius: 50%;
+}

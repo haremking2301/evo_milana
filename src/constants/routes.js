@@ -13,4 +13,5 @@ export const APP_ROUTES = {
     ACCOUNT_ORDER_PAGE: '/account/order',
     ACCOUNT_ADRESS_PAGE: '/account/adress',
     ACCOUNT_PASSWORD_PAGE: '/account/password',
+    PAYMENT_PAGE: '/payment',
 }

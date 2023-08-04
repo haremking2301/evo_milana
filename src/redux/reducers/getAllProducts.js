@@ -19,6 +19,7 @@ const initialState = {
     // Account
     isAccount: '',
     detailsAccount: [],
+    idUser: null,
     // Trang tin tức
     dataNews: [],
     isLoadingNews: false,
@@ -80,6 +81,7 @@ export const getItemsProductsReducer = createSlice({
         builder.addCase(getUserDetailsThunk.pending, (state, action) => {
         });
         builder.addCase(getUserDetailsThunk.fulfilled, (state, action) => {
+            state.idUser = action.payload[0].id
             state.detailsAccount = action.payload
         });
     }

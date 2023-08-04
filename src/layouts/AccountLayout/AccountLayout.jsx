@@ -50,13 +50,13 @@ const AccountLayout = () => {
                         </Link>
                     </li>
                     <li className="mb-[10px] cursor-pointer hover:text-color-header">
-                        <Link to={APP_ROUTES.ACCOUNT_PASSWORD_PAGE}>
-                            Đổi mật khẩu
+                        <Link to={APP_ROUTES.ACCOUNT_ADRESS_PAGE}>
+                            Sổ địa chỉ
                         </Link>
                     </li>
                     <li className="mb-[10px] cursor-pointer hover:text-color-header">
-                        <Link to={APP_ROUTES.ACCOUNT_ADRESS_PAGE}>
-                            Sổ địa chỉ
+                        <Link to={APP_ROUTES.ACCOUNT_PASSWORD_PAGE}>
+                            Đổi mật khẩu
                         </Link>
                     </li>
                     <li

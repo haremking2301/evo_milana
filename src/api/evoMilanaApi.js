@@ -61,9 +61,35 @@ const evoMilanaApi = {
             console.log(err);
         }
     },
+    getAllAdress: async function(params) {
+        try {
+            const res = await axios.get(`${process.env.REACT_APP_API_URL}address`, {
+                params: {
+                    ...params,
+                }
+            })
+            return res.data
+        } catch (err) {
+            console.log(err);
+        }
+    },
     postDataUsersRegister: async function(data) {
         try {
             await axios.post(`${process.env.REACT_APP_API_URL}users`, data)
+        } catch (err) {
+            console.log(err);
+        }
+    },
+    postDataAddress: async function(data) {
+        try {
+            await axios.post(`${process.env.REACT_APP_API_URL}address`, data)
+        } catch (err) {
+            console.log(err);
+        }
+    },
+    changePasswordRegister: async function(data, id) {
+        try {
+            await axios.patch(`${process.env.REACT_APP_API_URL}users/${id}`, { password: `${data}` })
         } catch (err) {
             console.log(err);
         }

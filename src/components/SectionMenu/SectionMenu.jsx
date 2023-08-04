@@ -15,8 +15,8 @@ function SectionMenu() {
                 </div>
                 <p className='text-[14px]'>Evo Milana cung cấp những mẫu thiết kế thanh lịch, hiện đại được cập nhật liên tục hàng tuần.</p>
             </div>
-            <div className='mt-[30px] grid grid-cols-1 sm:grid-cols-2 gap-3'>
-                <div className='lg:max-w-[500px] md:max-w-[300px] sm:max-w-[240px]'>
+            <div className='mt-[30px] grid grid-cols-1 sm:grid-cols-2 sm:ml-[15px] md:ml-[35px] lg:ml-[30px] lg:mr-[30px]'>
+                <div className='lg:max-w-[500px] md:max-w-[300px] sm:max-w-[240px] mb-[10px]'>
                     <img className='cursor-pointer hover:scale-105 transition-all ease-in-out duration-500' src='https://bizweb.dktcdn.net/100/384/760/themes/761815/assets/feature_banner_image_1.jpg?1685438253758'></img>
                 </div>
                 <div className='grid grid-cols-2 gap-3 lg:max-w-[500px] md:max-w-[300px] sm:max-w-[240px]'>

@@ -16,7 +16,7 @@ function AccountPage() {
     }, [])
     return (
         <div className="lg:ml-[60px]">
-            <p className="text-[20px] font-medium text-left">THÔNG TIN TÀI KHOẢN</p>
+            <p className="text-[20px] font-medium text-left mb-[30px]">THÔNG TIN TÀI KHOẢN</p>
             <div className="flex">
                 <p className="font-semibold">Họ tên:</p>
                 <p className="ml-[10px]">{(detailsAccount.length === 0)? '' : detailsAccount[0].fullName}</p>

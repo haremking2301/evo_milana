@@ -4,7 +4,7 @@
       "fullName": "Nguyễn Anh Toàn",
       "phoneNumber": "0372955540",
       "email": "toanggg2301@gmail.com",
-      "password": "23012000",
+      "password": "23012000at",
       "id": 1
     }
   ],
@@ -19,7 +19,8 @@
       "salePrice": 15,
       "color1": "#ffffff",
       "color2": "#000000",
-      "color3": ""
+      "color3": "",
+      "brand": "Evo Milana"
     },
     {
       "title": "Áo thun basic form rộng cổ tim",
@@ -31,7 +32,8 @@
       "id": 2,
       "color1": "#fef2f0",
       "color2": "#000000",
-      "color3": ""
+      "color3": "",
+      "brand": "Evo Milana"
     },
     {
       "title": "Túi đeo chéo Leather Satin Scarf",
@@ -43,7 +45,8 @@
       "color1": "#000000",
       "color2": "",
       "color3": "",
-      "id": 3
+      "id": 3,
+      "brand": "HAVAIANAS"
     },
     {
       "title": "Túi đeo chéo Large Resin Effect Buckle",
@@ -55,7 +58,8 @@
       "color1": "#a95843",
       "color2": "#363d54",
       "color3": "",
-      "id": 4
+      "id": 4,
+      "brand": "MLB"
     },
     {
       "title": "Túi đeo chéo Croc Effect Angular",
@@ -67,7 +71,8 @@
       "color1": "#f9e490",
       "color2": "",
       "color3": "",
-      "id": 5
+      "id": 5,
+      "brand": "TED BAKER"
     },
     {
       "title": "Túi đeo chéo Croc Effect Mini Rectangular Crossbody",
@@ -79,7 +84,8 @@
       "color1": "#ffffff",
       "color2": "#615a5a",
       "color3": "",
-      "id": 6
+      "id": 6,
+      "brand": "THE KOOPLES"
     },
     {
       "title": "Túi đeo chéo Canvas Crossbody",
@@ -91,7 +97,8 @@
       "color1": "#c7bdb5",
       "color2": "",
       "color3": "",
-      "id": 7
+      "id": 7,
+      "brand": "THE KOOPLES"
     },
     {
       "title": "Túi đeo chéo Angular Crossbody",
@@ -103,7 +110,8 @@
       "color1": "#efc39b",
       "color2": "",
       "color3": "",
-      "id": 8
+      "id": 8,
+      "brand": "THE KOOPLES"
     },
     {
       "title": "Túi đeo chéo Raffia Floral",
@@ -115,7 +123,8 @@
       "color1": "#000000",
       "color2": "#d2cbbc",
       "color3": "",
-      "id": 9
+      "id": 9,
+      "brand": "TED BAKER"
     },
     {
       "title": "Túi đeo chéo Grommet Accented",
@@ -127,7 +136,8 @@
       "color1": "#bb3e46",
       "color2": "#b5b5b5",
       "color3": "#000000",
-      "id": 10
+      "id": 10,
+      "brand": "TED BAKER"
     },
     {
       "title": "Túi đeo chéo Window Crossbody",
@@ -139,7 +149,8 @@
       "color1": "#a45d4e",
       "color2": "#ebbeb8",
       "color3": "#2c2c2c",
-      "id": 11
+      "id": 11,
+      "brand": "THE KOOPLES"
     },
     {
       "title": "Túi đeo chéo Round Metal Accent Wrinkled Effect",
@@ -151,7 +162,8 @@
       "color1": "#1d1d1d",
       "color2": "#334039",
       "color3": "",
-      "id": 12
+      "id": 12,
+      "brand": "MLB"
     },
     {
       "title": "Túi xách trung satchel khóa trang trí to",
@@ -163,7 +175,8 @@
       "color1": "#edd0cc",
       "color2": "#2e3438",
       "color3": "#395d6d",
-      "id": 13
+      "id": 13,
+      "brand": "Evo Milana"
     },
     {
       "title": "Túi xách trung tote",
@@ -175,7 +188,8 @@
       "color1": "#dacfc7",
       "color2": "",
       "color3": "",
-      "id": 14
+      "id": 14,
+      "brand": "Evo Milana"
     },
     {
       "title": "Túi xách trung satchel",
@@ -187,7 +201,8 @@
       "color1": "#d7aa95",
       "color2": "#c4b6c2",
       "color3": "",
-      "id": 15
+      "id": 15,
+      "brand": "Evo Milana"
     },
     {
       "title": "Ví monochrome",
@@ -199,7 +214,8 @@
       "color1": "#eed2ca",
       "color2": "#45737e",
       "color3": "#373e40",
-      "id": 16
+      "id": 16,
+      "brand": "Evo Milana"
     },
     {
       "title": "Ví cầm tay mini",
@@ -211,7 +227,8 @@
       "color1": "#e3bba6",
       "color2": "#24232a",
       "color3": "#e6dae2",
-      "id": 17
+      "id": 17,
+      "brand": "Evo Milana"
     },
     {
       "title": "Giày sandal gót vuông chất liệu lấp lánh",
@@ -223,7 +240,8 @@
       "color1": "#d8d9dd",
       "color2": "#46464d",
       "color3": "",
-      "id": 18
+      "id": 18,
+      "brand": "Evo Milana"
     },
     {
       "title": "Giày sandal gót vuông đính hoa trang trí",
@@ -235,7 +253,8 @@
       "color1": "#ffffff",
       "color2": "#000000",
       "color3": "#efb059",
-      "id": 19
+      "id": 19,
+      "brand": "Evo Milana"
     },
     {
       "title": "Giày sandal họa tiết hoa khô",
@@ -247,7 +266,8 @@
       "color1": "#e9c8be",
       "color2": "#da966e",
       "color3": "",
-      "id": 20
+      "id": 20,
+      "brand": "Evo Milana"
     },
     {
       "title": "Giày sandal gót vuông phối si hologram",
@@ -259,7 +279,8 @@
       "color1": "#bec9d1",
       "color2": "#efe8e8",
       "color3": "",
-      "id": 21
+      "id": 21,
+      "brand": "Evo Milana"
     },
     {
       "title": "Giày đế xuồng giả gỗ",
@@ -271,7 +292,8 @@
       "color1": "#ca906d",
       "color2": "",
       "color3": "",
-      "id": 22
+      "id": 22,
+      "brand": "Evo Milana"
     },
     {
       "title": "Giày sandal gót thô hoa trang trí",
@@ -283,7 +305,8 @@
       "color1": "#ca906d",
       "color2": "#2d2d30",
       "color3": "",
-      "id": 23
+      "id": 23,
+      "brand": "Evo Milana"
     },
     {
       "title": "Dép unisex Top Mix",
@@ -295,7 +318,8 @@
       "color1": "#1e2c4b",
       "color2": "#ce4052",
       "color3": "#79cac5",
-      "id": 24
+      "id": 24,
+      "brand": "Evo Milana"
     },
     {
       "title": "Dép nam Simpsons",
@@ -307,7 +331,8 @@
       "color1": "#0565af",
       "color2": "#d19e08",
       "color3": "",
-      "id": 25
+      "id": 25,
+      "brand": "Evo Milana"
     },
     {
       "title": "Áo thun nam tay ngắn Skull Badge",
@@ -319,7 +344,8 @@
       "color1": "#212024",
       "color2": "",
       "color3": "",
-      "id": 26
+      "id": 26,
+      "brand": "HAVAIANAS"
     },
     {
       "title": "Áo thun nam cổ tròn tay ngắn Just For Fun",
@@ -331,7 +357,8 @@
       "color1": "#e3e6f0",
       "color2": "",
       "color3": "",
-      "id": 27
+      "id": 27,
+      "brand": "HAVAIANAS"
     },
     {
       "title": "Áo thun Chunky New York Yankees",
@@ -343,7 +370,8 @@
       "color1": "#151c29",
       "color2": "#d8dfea",
       "color3": "#bfe471",
-      "id": 28
+      "id": 28,
+      "brand": "HAVAIANAS"
     },
     {
       "title": "Áo khoác kiểu cổ cao MLB x Disney",
@@ -355,7 +383,8 @@
       "color1": "#262626",
       "color2": "",
       "color3": "",
-      "id": 29
+      "id": 29,
+      "brand": "MLB"
     },
     {
       "title": "Áo khoác bóng chày Monogram",
@@ -367,7 +396,8 @@
       "color1": "#cccbcc",
       "color2": "#414860",
       "color3": "",
-      "id": 30
+      "id": 30,
+      "brand": "MLB"
     },
     {
       "title": "Áo khoác bóng chày chuột Mickey MLB x Disney",
@@ -379,7 +409,8 @@
       "color1": "#1f1f1f",
       "color2": "",
       "color3": "",
-      "id": 31
+      "id": 31,
+      "brand": "MLB"
     },
     {
       "title": "Áo hoodie phối zip hình mickey MLB x Disney",
@@ -391,7 +422,8 @@
       "color1": "#1f1f1f",
       "color2": "",
       "color3": "",
-      "id": 32
+      "id": 32,
+      "brand": "MLB"
     },
     {
       "title": "Áo thun tay ngắn cổ tròn Small Logo",
@@ -403,7 +435,8 @@
       "color1": "#eae9ef",
       "color2": "#141211",
       "color3": "",
-      "id": 33
+      "id": 33,
+      "brand": "TED BAKER"
     },
     {
       "title": "Áo thun nữ phom ôm thời trang",
@@ -415,7 +448,8 @@
       "color1": "#e8e8e8",
       "color2": "",
       "color3": "",
-      "id": 34
+      "id": 34,
+      "brand": "TED BAKER"
     },
     {
       "title": "Áo hai dây nữ satin Green Lace Strap Back",
@@ -427,7 +461,8 @@
       "color1": "#f68b57",
       "color2": "#1f1f1f",
       "color3": "",
-      "id": 35
+      "id": 35,
+      "brand": "TED BAKER"
     },
     {
       "title": "Áo thun tay ngắn năng động Popcorn Big Logo",
@@ -439,7 +474,8 @@
       "color1": "#f07440",
       "color2": "#e0d8d2",
       "color3": "",
-      "id": 36
+      "id": 36,
+      "brand": "TED BAKER"
     },
     {
       "title": "Áo sơ mi nữ sát nách buộc tà Linen Rich Palm",
@@ -451,7 +487,8 @@
       "color1": "#ebe5ec",
       "color2": "#f7f3ef",
       "color3": "",
-      "id": 37
+      "id": 37,
+      "brand": "THE KOOPLES"
     },
     {
       "title": "Áo croptop nữ phom ôm Double Seam",
@@ -463,7 +500,8 @@
       "color1": "#dd673f",
       "color2": "#2e2c2c",
       "color3": "",
-      "id": 38
+      "id": 38,
+      "brand": "THE KOOPLES"
     },
     {
       "title": "Áo thun nữ cổ tròn Arnial",
@@ -475,7 +513,8 @@
       "color1": "#f4e8d9",
       "color2": "",
       "color3": "",
-      "id": 39
+      "id": 39,
+      "brand": "THE KOOPLES"
     },
     {
       "title": "Áo thun nữ tay ngắn cổ tròn Aymelia",
@@ -487,7 +526,8 @@
       "color1": "#e8e8e8",
       "color2": "",
       "color3": "",
-      "id": 40
+      "id": 40,
+      "brand": "THE KOOPLES"
     }
   ],
   "news": [
@@ -594,6 +634,250 @@
       "color2": "#414860",
       "color3": "",
       "id": 30
+    }
+  ],
+  "shoes": [
+    {
+      "title": "Giày sandal gót vuông chất liệu lấp lánh",
+      "img1": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/bac-sd05051-1-e3ea4732033e4781a553d5d1106174d8-1024x1024.jpg?v=1587373848737",
+      "img2": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/bac-sd05051-2-b423bead789a496b9af0ece8d6c7ba9b-1024x1024.jpg?v=1587373855627",
+      "price": 435,
+      "defaultPrice": "",
+      "salePrice": "",
+      "color1": "#d8d9dd",
+      "color2": "#46464d",
+      "color3": "",
+      "id": 18
+    },
+    {
+      "title": "Giày sandal gót vuông đính hoa trang trí",
+      "img1": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/trang-sd05052-1-65cd680acdc04f0fbcecc4197567abe8-1024x1024.jpg?v=1587373568247",
+      "img2": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/trang-sd05052-2-f73e1aba39004b52b32c3e201a2fd6d5-1024x1024.jpg?v=1587373575290",
+      "price": 455,
+      "defaultPrice": "",
+      "salePrice": "",
+      "color1": "#ffffff",
+      "color2": "#000000",
+      "color3": "#efb059",
+      "id": 19
+    },
+    {
+      "title": "Giày sandal họa tiết hoa khô",
+      "img1": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/hong-sd09077-1-3bf027fac9de4f9cacc459e552f336a2-1024x1024.jpg?v=1587368330023",
+      "img2": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/hong-sd09077-2-e46a1e9705a047e480a9702bdd57b276-1024x1024.jpg?v=1587368338080",
+      "price": 550,
+      "defaultPrice": "",
+      "salePrice": "",
+      "color1": "#e9c8be",
+      "color2": "#da966e",
+      "color3": "",
+      "id": 20
+    },
+    {
+      "title": "Giày sandal gót vuông phối si hologram",
+      "img1": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/xanh-nhat-sd07038-1-74b371d8d519463f9788eada0cc66b36-1024x1024.jpg?v=1587368120233",
+      "img2": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/xanh-nhat-sd07038-2-243c6bcda42d486dbd17bf60d24198d9-1024x1024.jpg?v=1587368128037",
+      "price": 495,
+      "defaultPrice": "550.000",
+      "salePrice": "10",
+      "color1": "#bec9d1",
+      "color2": "#efe8e8",
+      "color3": "",
+      "id": 21
+    },
+    {
+      "title": "Giày đế xuồng giả gỗ",
+      "img1": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/nau-dx07020-1-7fcc997bde38467182a1a0a069491a2e-1024x1024.jpg?v=1587367954590",
+      "img2": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/nau-dx07020-2-c00d18dfc3e94b47a6b91008da34b37e-1024x1024.jpg?v=1587367962257",
+      "price": 455,
+      "defaultPrice": "",
+      "salePrice": "",
+      "color1": "#ca906d",
+      "color2": "",
+      "color3": "",
+      "id": 22
+    },
+    {
+      "title": "Giày sandal gót thô hoa trang trí",
+      "img1": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/trang-sd09076-1-f9a4ed8d301f45bd85f1693cad14f214-1024x1024.jpg?v=1587367757097",
+      "img2": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/trang-sd09076-2-adc094afa6f04d339eca0fc9dfd78014-1024x1024.jpg?v=1587367763957",
+      "price": 455,
+      "defaultPrice": "",
+      "salePrice": "",
+      "color1": "#ca906d",
+      "color2": "#2d2d30",
+      "color3": "",
+      "id": 23
+    }
+  ],
+  "bags": [
+    {
+      "title": "Túi xách trung satchel khóa trang trí to",
+      "img1": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/hong-txt214-2-c2f8b089200d4e07a80f5b0155819208-1024x1024.jpg?v=1587375380690",
+      "img2": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/den-txt214-2-cb0d02b2889643b1a873db06357096e4-1024x1024.jpg?v=1587375394000",
+      "price": 755,
+      "defaultPrice": "",
+      "salePrice": "",
+      "color1": "#edd0cc",
+      "color2": "#2e3438",
+      "color3": "#395d6d",
+      "id": 13
+    },
+    {
+      "title": "Túi xách trung tote",
+      "img1": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/kem-txt215-2-31bedc9c9cc94e619c5ce6e33e7a3957-1024x1024.jpg?v=1587375192570",
+      "img2": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/kem-txt215-3-345212195fef4775b2c4fceeb39a33f5-master.jpg?v=1587375204287",
+      "price": 795,
+      "defaultPrice": "850.000",
+      "salePrice": "6",
+      "color1": "#dacfc7",
+      "color2": "",
+      "color3": "",
+      "id": 14
+    },
+    {
+      "title": "Túi xách trung satchel",
+      "img1": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/nau-txt217-2-ff3eb09c0d1b4b17bfea70c455573a5b-1024x1024.jpg?v=1587374923387",
+      "img2": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/nau-txt217-1-77519c98e84548ba9ae66c9a9ac0c955-1024x1024.jpg?v=1587374933723",
+      "price": 695,
+      "defaultPrice": "",
+      "salePrice": "",
+      "color1": "#d7aa95",
+      "color2": "#c4b6c2",
+      "color3": "",
+      "id": 15
+    },
+    {
+      "title": "Ví monochrome",
+      "img1": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/hong-vi131-2-af5572efa1f14106b7322a022f95b660-1024x1024.jpg?v=1587374318407",
+      "img2": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/hong-vi131-3-c95c26cc81904e77803f614b7d330c70-1024x1024.jpg?v=1587374327943",
+      "price": 435,
+      "defaultPrice": "",
+      "salePrice": "",
+      "color1": "#eed2ca",
+      "color2": "#45737e",
+      "color3": "#373e40",
+      "id": 16
+    },
+    {
+      "title": "Ví cầm tay mini",
+      "img1": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/nau-vi132-2-a4343d184fe648b4a10bd466261d137e-1024x1024.jpg?v=1587374156180",
+      "img2": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/den-vi132-2-9fe00809871e4ba58ba53789135a2857-1024x1024.jpg?v=1587374179740",
+      "price": 305,
+      "defaultPrice": "",
+      "salePrice": "",
+      "color1": "#e3bba6",
+      "color2": "#24232a",
+      "color3": "#e6dae2",
+      "id": 17
+    }
+  ],
+  "sales": [
+    {
+      "title": "Túi đeo chéo Croc Effect Angular",
+      "img1": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/24-ck280781007-1-a2ad7363e0404484bec9b777e8c626bf-1024x1024.jpg?v=1587563047683",
+      "img2": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/24-ck280781007-5-6fea0c7d6371401ca77ba09cc694c9e2-1024x1024.jpg?v=1587563069333",
+      "price": 1150,
+      "defaultPrice": "2,560.000",
+      "salePrice": "55",
+      "color1": "#f9e490",
+      "color2": "",
+      "color3": "",
+      "id": 5
+    },
+    {
+      "title": "Túi đeo chéo Croc Effect Mini Rectangular Crossbody",
+      "img1": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/09-ck280160070-2-1-59d241beaf8843aeb7095c2737ebea04-1024x1024.jpg?v=1587562914843",
+      "img2": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/09-ck280160070-2-2-5d0a5279475344e3b355bd0ae327d2a0-1024x1024.jpg?v=1587562923180",
+      "price": 990,
+      "defaultPrice": "1,250.000",
+      "salePrice": "21",
+      "color1": "#ffffff",
+      "color2": "#615a5a",
+      "color3": "",
+      "id": 6
+    },
+    {
+      "title": "Túi đeo chéo Canvas Crossbody",
+      "img1": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/01-ck280780900-1-cc980bff7d754b6bbb455fe2d35c612a-1024x1024.jpg?v=1587562739343",
+      "img2": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/01-ck280780900-2-a991adfeffc747e6803327884c722d7d-1024x1024.jpg?v=1587562745450",
+      "price": 650000,
+      "defaultPrice": "1,350.000",
+      "salePrice": "52",
+      "color1": "#c7bdb5",
+      "color2": "",
+      "color3": "",
+      "id": 7
+    },
+    {
+      "title": "Túi đeo chéo Angular Crossbody",
+      "img1": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/05-ck280270210-1-2c483e4ead444719b2f26a12906b9193-1024x1024.jpg?v=1587562610647",
+      "img2": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/05-ck280270210-3-a07fd67c9b03413fbbf1bf4ad7d2d05d-1024x1024.jpg?v=1587562618180",
+      "price": 550,
+      "defaultPrice": "1,450.000",
+      "salePrice": "62",
+      "color1": "#efc39b",
+      "color2": "",
+      "color3": "",
+      "id": 8
+    },
+    {
+      "title": "Túi đeo chéo Raffia Floral",
+      "img1": "https://bizweb.dktcdn.net/100/384/760/products/01-ck280780861-1-11af5ecdafd64232840a630dd93b615a-1024x1024.jpg?v=1587561754620",
+      "img2": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/01-ck280780861-3-a6ee643f441e401a9c270e35211b760b-1024x1024.jpg?v=1587561763533",
+      "price": 950,
+      "defaultPrice": "2,350.000",
+      "salePrice": "60",
+      "color1": "#000000",
+      "color2": "#d2cbbc",
+      "color3": "",
+      "id": 9
+    },
+    {
+      "title": "Túi đeo chéo Grommet Accented",
+      "img1": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/08-ck280780839-1-2ebcfac097f348f6944563b9845ed231-1024x1024.jpg?v=1587561645090",
+      "img2": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/07-ck280780839-1-f9f9eb2ec696496f91b2aeb805c4daf6-1024x1024.jpg?v=1587561645090",
+      "price": 650,
+      "defaultPrice": "1,650.000",
+      "salePrice": "61",
+      "color1": "#bb3e46",
+      "color2": "#b5b5b5",
+      "color3": "#000000",
+      "id": 10
+    }
+  ],
+  "address": [
+    {
+      "idUser": 1,
+      "city": "Thành phố Hà Nội",
+      "district": "Quận Tây Hồ",
+      "ward": "Phường Quảng An",
+      "address": "67",
+      "id": 1
+    },
+    {
+      "idUser": 1,
+      "city": "Tỉnh Hà Giang",
+      "district": "Huyện Đồng Văn",
+      "ward": "Xã Lũng Thầu",
+      "address": "33",
+      "id": 2
+    },
+    {
+      "idUser": 1,
+      "city": "Tỉnh Bắc Kạn",
+      "district": "Huyện Ngân Sơn",
+      "ward": "Xã Cốc Đán",
+      "address": "67",
+      "id": 3
+    },
+    {
+      "idUser": 1,
+      "city": "Tỉnh Hà Giang",
+      "district": "Huyện Mèo Vạc",
+      "ward": "Xã Lũng Chinh",
+      "address": "67",
+      "id": 4
     }
   ]
 }
