@@ -8,7 +8,7 @@ import { FaFacebookF, FaGooglePlusG } from 'react-icons/fa6'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from "@hookform/resolvers/yup"
 import * as yup from 'yup'
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../RegisterPage/style.scss'
 import evoMilanaApi from '../../api/evoMilanaApi'
@@ -83,7 +83,7 @@ function RegisterPage() {
                     <input {...register("password")} className='mt-[10px] h-[40px] px-[15px] border-solid border-[1px] border-[#e1e1e1] rounded-[4px] outline-none w-full' type='password' placeholder='Nhập mật khẩu'></input>
                     <button className='mt-[10px] float-right text-[14px] text-[#9039e7]'>Quên mật khẩu ?</button>
                     <button typeof='submit' type='submit' className='mt-[20px] w-full bg-[#9f51ed] text-white py-[10px] rounded-[4px]'>Đăng ký</button>
-                    <ToastContainer></ToastContainer>
+                    {/* <ToastContainer></ToastContainer> */}
                 </form>
                 <div className='max-w-[80%] mx-auto text-center mt-[10px]'>
                     <p className='text-[13px] text-slate-400'>Hoặc đăng nhập qua</p>

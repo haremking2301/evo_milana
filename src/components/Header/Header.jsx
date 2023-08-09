@@ -12,7 +12,7 @@ import { Empty, Input } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
 import { searchReducer } from '../../redux/reducers/getAllProducts';
 import { deleteProductReducer, inCriseProductReducer, miniusProductReducer } from '../../redux/reducers/cartSlice';
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 
 function Header() {
     // Xử lý search
@@ -113,6 +113,7 @@ function Header() {
 
     return (
     <div className='relative'>
+        <ToastContainer></ToastContainer>
         <div className={'fixed transition-all ease-in-out duration-500 h-full bg-black opacity-30 z-31 ' + `${isSearch? 'w-full' : 'w-0'}`}>
 
         </div>

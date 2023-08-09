@@ -73,6 +73,18 @@ const evoMilanaApi = {
             console.log(err);
         }
     },
+    getAllOrders: async function(params) {
+        try {
+            const res = await axios.get(`${process.env.REACT_APP_API_URL}orders`, {
+                params: {
+                    ...params,
+                }
+            })
+            return res.data
+        } catch (err) {
+            console.log(err);
+        }
+    },
     postDataUsersRegister: async function(data) {
         try {
             await axios.post(`${process.env.REACT_APP_API_URL}users`, data)
@@ -83,6 +95,13 @@ const evoMilanaApi = {
     postDataAddress: async function(data) {
         try {
             await axios.post(`${process.env.REACT_APP_API_URL}address`, data)
+        } catch (err) {
+            console.log(err);
+        }
+    },
+    postDataOrders: async function(data) {
+        try {
+            await axios.post(`${process.env.REACT_APP_API_URL}orders`, data)
         } catch (err) {
             console.log(err);
         }

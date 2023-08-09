@@ -6,6 +6,27 @@
       "email": "toanggg2301@gmail.com",
       "password": "23012000at",
       "id": 1
+    },
+    {
+      "fullName": "Toàn",
+      "phoneNumber": "0372955540",
+      "email": "toanggg2000@gmail.com",
+      "password": "23012000at",
+      "id": 2
+    },
+    {
+      "fullName": "Nguyễn Toàn",
+      "phoneNumber": "0372955540",
+      "email": "ttt@gmail.com",
+      "password": "23012000",
+      "id": 3
+    },
+    {
+      "fullName": "Nguyen Anh Toan",
+      "phoneNumber": "0372955540",
+      "email": "dev2301@gmail.com",
+      "password": "23012000at",
+      "id": 4
     }
   ],
   "products": [
@@ -849,35 +870,222 @@
   "address": [
     {
       "idUser": 1,
-      "city": "Thành phố Hà Nội",
-      "district": "Quận Tây Hồ",
-      "ward": "Phường Quảng An",
-      "address": "67",
+      "city": "Tỉnh Quảng Nam",
+      "district": "Thành phố Hội An",
+      "ward": "Xã Cẩm Thanh",
+      "address": "nhà hàng cầu đỏ",
       "id": 1
     },
     {
       "idUser": 1,
-      "city": "Tỉnh Hà Giang",
-      "district": "Huyện Đồng Văn",
-      "ward": "Xã Lũng Thầu",
-      "address": "33",
+      "city": "Thành phố Hà Nội",
+      "district": "Quận Ba Đình",
+      "ward": "Phường Trúc Bạch",
+      "address": "67 xxx",
       "id": 2
     },
     {
-      "idUser": 1,
-      "city": "Tỉnh Bắc Kạn",
-      "district": "Huyện Ngân Sơn",
-      "ward": "Xã Cốc Đán",
-      "address": "67",
+      "idUser": 2,
+      "city": "Tỉnh Quảng Nam",
+      "district": "Thành phố Hội An",
+      "ward": "Xã Cẩm Thanh",
+      "address": "nhà hàng cầu đỏ",
       "id": 3
     },
     {
-      "idUser": 1,
-      "city": "Tỉnh Hà Giang",
-      "district": "Huyện Mèo Vạc",
-      "ward": "Xã Lũng Chinh",
-      "address": "67",
+      "idUser": 3,
+      "city": "Tỉnh Quảng Nam",
+      "district": "Thành phố Hội An",
+      "ward": "Xã Cẩm Thanh",
+      "address": "nhà hàng cầu đỏ",
       "id": 4
+    },
+    {
+      "idUser": 3,
+      "city": "Tỉnh Tuyên Quang",
+      "district": "Thành phố Tuyên Quang",
+      "ward": "Xã An Khang",
+      "address": "67 xxx",
+      "id": 5
+    },
+    {
+      "idUser": 3,
+      "city": "Tỉnh Lạng Sơn",
+      "district": "Thành phố Lạng Sơn",
+      "ward": "Phường Tam Thanh",
+      "address": "67 xxx",
+      "id": 6
+    },
+    {
+      "idUser": 2,
+      "city": "Thành phố Cần Thơ",
+      "district": "Quận Ô Môn",
+      "ward": "Phường Thới Hòa",
+      "address": "67",
+      "id": 7
+    },
+    {
+      "idUser": 4,
+      "city": "Tỉnh Quảng Nam",
+      "district": "Thành phố Hội An",
+      "ward": "Xã Cẩm Thanh",
+      "address": "nhà hàng cầu đỏ",
+      "id": 8
+    },
+    {
+      "idUser": 4,
+      "city": "Thành phố Đà Nẵng",
+      "district": "Quận Cẩm Lệ",
+      "ward": "Phường Khuê Trung",
+      "address": "xxxxxxxxxx asdas",
+      "id": 9
+    },
+    {
+      "idUser": 1,
+      "city": "Tỉnh Lai Châu",
+      "district": "Huyện Tam Đường",
+      "ward": "Xã Nùng Nàng",
+      "address": "nhà hàng cầu đỏ",
+      "id": 10
+    },
+    {
+      "idUser": 1,
+      "city": "Tỉnh Phú Thọ",
+      "district": "Thị xã Phú Thọ",
+      "ward": "Phường Phong Châu",
+      "address": "nhà hàng cầu đỏ",
+      "id": 11
+    },
+    {
+      "idUser": 1,
+      "city": "Tỉnh Lạng Sơn",
+      "district": "Huyện Hữu Lũng",
+      "ward": "Xã Đồng Tiến",
+      "address": "33",
+      "id": 12
+    },
+    {
+      "idUser": 1,
+      "city": "Tỉnh Lạng Sơn",
+      "district": "Huyện Bắc Sơn",
+      "ward": "Xã Vũ Lăng",
+      "address": "33",
+      "id": 13
+    }
+  ],
+  "orders": [
+    {
+      "day": "19:38 5/8/2023",
+      "idUser": 1,
+      "address": "Tỉnh Quảng Nam, Thành phố Hội An, Xã Cẩm Thanh, nhà hàng cầu đỏ",
+      "totalPrice": 2590,
+      "totalPayment": 2605,
+      "order": [
+        {
+          "id": "1M#000000",
+          "img": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/trang-1-69bde865cdeb4632be7627c8162be439-master.jpg?v=1587739551720",
+          "title": "Áo bra thun ren cài sau",
+          "color": "#000000",
+          "size": "M",
+          "quantity": 1,
+          "price": "290"
+        },
+        {
+          "id": "5M#f9e490",
+          "img": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/24-ck280781007-1-a2ad7363e0404484bec9b777e8c626bf-1024x1024.jpg?v=1587563047683",
+          "title": "Túi đeo chéo Croc Effect Angular",
+          "color": "#f9e490",
+          "size": "M",
+          "quantity": 2,
+          "price": "1150"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "day": "19:38 5/8/2023",
+      "idUser": 1,
+      "address": "Tỉnh Quảng Nam, Thành phố Hội An, Xã Cẩm Thanh, nhà hàng cầu đỏ",
+      "totalPrice": 1190,
+      "totalPayment": 1205,
+      "order": [
+        {
+          "id": "3M#000000",
+          "img": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/01-sl250150828-1-cbfa5651555b4d1381bc545f82902776-1024x1024.jpg?v=1587563353657",
+          "title": "Túi đeo chéo Leather Satin Scarf",
+          "color": "#000000",
+          "size": "M",
+          "quantity": 1,
+          "price": "1190"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "day": "19:38 5/8/2023",
+      "idUser": 1,
+      "address": "Tỉnh Quảng Nam, Thành phố Hội An, Xã Cẩm Thanh, nhà hàng cầu đỏ",
+      "totalPrice": 149,
+      "totalPayment": 164,
+      "order": [
+        {
+          "id": "2M#fef2f0",
+          "img": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/hong-2-85df480d54b94ff9a83ff0ba82cd3208-master.jpg?v=1587737127507",
+          "title": "Áo thun basic form rộng cổ tim",
+          "color": "#fef2f0",
+          "size": "M",
+          "quantity": 1,
+          "price": "149"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "day": "23:20 8/8/2023",
+      "idUser": 1,
+      "address": "Tỉnh Quảng Nam, Thành phố Hội An, Xã Cẩm Thanh, nhà hàng cầu đỏ",
+      "totalPrice": 940,
+      "totalPayment": 955,
+      "order": [
+        {
+          "id": "10M#bb3e46",
+          "img": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/08-ck280780839-1-2ebcfac097f348f6944563b9845ed231-1024x1024.jpg?v=1587561645090",
+          "title": "Túi đeo chéo Grommet Accented",
+          "color": "#bb3e46",
+          "size": "M",
+          "quantity": 1,
+          "price": "650"
+        },
+        {
+          "id": "1S#000000",
+          "img": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/trang-1-69bde865cdeb4632be7627c8162be439-master.jpg?v=1587739551720",
+          "title": "Áo bra thun ren cài sau",
+          "color": "#000000",
+          "size": "S",
+          "quantity": 1,
+          "price": "290"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "day": "23:20 8/8/2023",
+      "idUser": 1,
+      "address": "Tỉnh Quảng Nam, Thành phố Hội An, Xã Cẩm Thanh, nhà hàng cầu đỏ",
+      "totalPrice": 149,
+      "totalPayment": 164,
+      "order": [
+        {
+          "id": "2M#000000",
+          "img": "https://bizweb.dktcdn.net/thumb/large/100/384/760/products/hong-2-85df480d54b94ff9a83ff0ba82cd3208-master.jpg?v=1587737127507",
+          "title": "Áo thun basic form rộng cổ tim",
+          "color": "#000000",
+          "size": "M",
+          "quantity": 1,
+          "price": "149"
+        }
+      ],
+      "id": 5
     }
   ]
 }

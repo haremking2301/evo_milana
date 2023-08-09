@@ -1,7 +1,9 @@
-import { createSlice } from "@reduxjs/toolkit"
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
+import evoMilanaApi from "../../api/evoMilanaApi";
 
 const initialState = {
     cartProducts: JSON.parse(localStorage.getItem('cartProducts')) || [],
+    cartOrders: []
 }
 
 export const cartProductsReducer = createSlice({
@@ -40,11 +42,28 @@ export const cartProductsReducer = createSlice({
             state.cartProducts[actions.payload] = oldOder
             localStorage.setItem('cartProducts', JSON.stringify(state.cartProducts));
             }
-        }
+        },
+        updateProductReducer: (state, actions) => {
+            localStorage.removeItem('cartProducts')
+            state.cartProducts = []
+        },
+    },
+    extraReducers: function(builder) {
+        builder.addCase(getAllOrderThunk.pending, (state, action) => {
+        });
+        builder.addCase(getAllOrderThunk.fulfilled, (state, action) => {
+            state.cartOrders = action.payload
+        });
     }
+})
+
+export const getAllOrderThunk = createAsyncThunk('get/getAllOrderThunk', async function(params) {
+    const res = await evoMilanaApi.getAllOrders(params)
+    return res
 })
 
 export const addProductReducer = cartProductsReducer.actions.addProductReducer
 export const deleteProductReducer = cartProductsReducer.actions.deleteProductReducer
 export const inCriseProductReducer = cartProductsReducer.actions.inCriseProductReducer
 export const miniusProductReducer = cartProductsReducer.actions.miniusProductReducer
+export const updateProductReducer = cartProductsReducer.actions.updateProductReducer

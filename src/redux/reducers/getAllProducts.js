@@ -19,7 +19,7 @@ const initialState = {
     // Account
     isAccount: '',
     detailsAccount: [],
-    idUser: null,
+    idUser: null || sessionStorage.getItem('idUser'),
     // Trang tin tức
     dataNews: [],
     isLoadingNews: false,
@@ -82,6 +82,7 @@ export const getItemsProductsReducer = createSlice({
         });
         builder.addCase(getUserDetailsThunk.fulfilled, (state, action) => {
             state.idUser = action.payload[0].id
+            sessionStorage.setItem('idUser', state.idUser)
             state.detailsAccount = action.payload
         });
     }

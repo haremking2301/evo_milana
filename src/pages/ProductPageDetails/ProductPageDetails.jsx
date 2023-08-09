@@ -8,7 +8,7 @@ import { InputNumber, Skeleton } from "antd";
 import useScrollToTop from "../../hooks/useScrollToTop";
 import "../ProductPageDetails/style.scss";
 import { BsExplicit } from "react-icons/bs";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import { addProductReducer } from "../../redux/reducers/cartSlice";
 
 function ProductPageDetails() {
@@ -239,11 +239,14 @@ useEffect(() => {
                 >
                 Thêm vào giỏ
                 </button>
-                <ToastContainer></ToastContainer>
+                {/* <ToastContainer></ToastContainer> */}
             </div>
             </div>
         </div>
         )}
+    </div>
+    <div>
+        COMMENTS
     </div>
     </div>
 );
