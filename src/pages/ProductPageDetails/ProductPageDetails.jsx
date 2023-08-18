@@ -173,7 +173,7 @@ useEffect(() => {
         const allRate = allComments.map((comment) => comment.rate)
         const totalRate = (sumArray(allRate)/allRate.length)
         setStart(totalRate)
-    }, [allComments.length])
+    }, [allComments?.length])
 	return (
     <div>
     <div className="lg:max-w-[1100px] md:max-w-[700px] sm:max-w-[520px] mx-auto mt-[30px] text-center">
