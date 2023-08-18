@@ -4,6 +4,7 @@ import { cartProductsReducer } from "../reducers/cartSlice";
 import { loveProductsReducer } from "../reducers/loveSlice";
 import { filterProductsReducer } from "../reducers/filterSlice";
 import { allPlaceReducer } from "../reducers/addressSlice";
+import { allCommentsReducer } from "../reducers/commentsSlice";
 
 const store = configureStore({
     reducer: {
@@ -11,7 +12,8 @@ const store = configureStore({
         cartProducts: cartProductsReducer.reducer,
         loveProducts: loveProductsReducer.reducer,
         filterProducts: filterProductsReducer.reducer,
-        allPlace: allPlaceReducer.reducer
+        allPlace: allPlaceReducer.reducer,
+        allComments: allCommentsReducer.reducer
     }
 })
 

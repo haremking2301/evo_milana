@@ -7,7 +7,7 @@ function ProductsPage() {
     useScrollToTop()
     return (
         <div>
-            <img src={ require('../../source/img/bannerProduct.jpg') }></img>
+            <img src={ require('../../source/img/bannerProduct.png') }></img>
             <AllProducts></AllProducts>
         </div>
     )

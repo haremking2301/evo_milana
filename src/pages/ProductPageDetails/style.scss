@@ -19,3 +19,11 @@ input:checked + div {
 .ant-input-number.css-dev-only-do-not-override-1m62vyb.ant-input-number-focused {
     border-color: #f67e8f !important;
 }
+
+.css-dev-only-do-not-override-1m62vyb.ant-upload-wrapper .ant-upload-list.ant-upload-list-picture-card .ant-upload-list-item-error {
+    border-color: #f0ebec !important;
+}
+
+.ant-tooltip-inner {
+    display: none !important;
+}
