@@ -49,9 +49,9 @@ const evoMilanaApi = {
             console.log(err);
         }
     },
-    getDataLove: async function(key, params) {
+    getDataLove: async function(params) {
         try {
-            const res = await axios.get(`${process.env.REACT_APP_API_URL}${key}`, {
+            const res = await axios.get(`${process.env.REACT_APP_API_URL}products`, {
                 params: {
                     ...params,
                 }

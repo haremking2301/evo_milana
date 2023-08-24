@@ -40,14 +40,17 @@ function SectionLove() {
         ]
     };
     const dispatch = useDispatch()
-    const [ productType, setProductType ] = useState('dresses')
+    const [ productType, setProductType ] = useState('áo')
     const handleChange = (e) => {
         setProductType(e.target.value)
     }
 
     const loveProducts = useSelector((state) => state.loveProducts.loveProducts)
     useEffect(() => {
-        dispatch(getDressItemsThunk(productType))
+        dispatch(getDressItemsThunk({
+            q: productType,
+            _limit: 6
+        }))
     }, [productType])
 
     const inputRef = useRef(null)
@@ -57,34 +60,34 @@ function SectionLove() {
     return (
         <div className='lg:max-w-[1100px] md:max-w-[700px] sm:max-w-[520px] mx-auto mt-[50px] text-center'>
             <div>
-                <p className='text-[23px] font-semibold'>ĐƯỢC YÊU THÍCH NHẤT</p>
+                <p className='text-[23px] font-semibold'>SẢN PHẨM NỔI BẬT</p>
                 <div className='relative'>
                     <BsExplicit className='mx-auto my-[10px] text-[24px]'></BsExplicit>
                     <span className='absolute top-3 left-[52%] border-solid border-[1px] w-[70px] border-slate-300'></span>
                     <span className='absolute top-3 right-[52%] border-solid border-[1px] w-[70px] border-slate-300'></span>
                 </div>
-                <p className='text-[14px]'>Danh sách sản phẩm thời trang bán chạy, sản phẩm thời trang hot trong bộ sưu tập thời trang Evo Milana.</p>
+                <p className='text-[14px]'>Danh sách sản phẩm thời trang hot trong bộ sưu tập thời trang Evo Milana.</p>
             </div>
             <form className='mt-[10px] flex flex-wrap justify-evenly'>
                 <div className='relative mt-[20px]'>
-                    <input ref={inputRef} onChange={handleChange} value={'dresses'} className='input-check absolute h-full w-full cursor-pointer z-10 opacity-0' type='radio' name='type'></input>
+                    <input ref={inputRef} onChange={handleChange} value={'Áo'} className='input-check absolute h-full w-full cursor-pointer z-10 opacity-0' type='radio' name='type'></input>
                     <label className='transition-all ease-in-out duration-300 box-shadow-z rounded-sm border-solid border-[2px] border-[#7c87a0] px-[10px] py-[5px] font-semibold'>TRANG PHỤC</label>
                 </div>
                 <div className='relative mt-[20px]'>
-                    <input onChange={handleChange} value={'shoes'} className='input-check absolute h-full w-full cursor-pointer z-10 opacity-0' type='radio' name='type'></input>
+                    <input onChange={handleChange} value={'giày'} className='input-check absolute h-full w-full cursor-pointer z-10 opacity-0' type='radio' name='type'></input>
                     <label className='transition-all ease-in-out duration-300 box-shadow-z rounded-sm border-solid border-[2px] border-[#7c87a0] px-[20px] py-[5px] font-semibold'>GIÀY DÉP</label>
                 </div>
                 <div className='relative mt-[20px]'>
-                    <input onChange={handleChange} value={'bags'} className='input-check absolute h-full w-full cursor-pointer z-10 opacity-0' type='radio' name='type'></input>
+                    <input onChange={handleChange} value={'túi'} className='input-check absolute h-full w-full cursor-pointer z-10 opacity-0' type='radio' name='type'></input>
                     <label className='transition-all ease-in-out duration-300 box-shadow-z rounded-sm border-solid border-[2px] border-[#7c87a0] px-[35px] py-[5px] font-semibold'>TÚI VÍ</label>
                 </div>
                 <div className='relative mt-[20px]'>
-                    <input onChange={handleChange} value={'sales'} className='input-check absolute h-full w-full cursor-pointer z-10 opacity-0' type='radio' name='type'></input>
-                    <label className='transition-all ease-in-out duration-300 box-shadow-z rounded-sm border-solid border-[2px] border-[#7c87a0] px-[20px] py-[5px] font-semibold'>SIÊU SALE</label>
+                    <input onChange={handleChange} value={'mắt kính'} className='input-check absolute h-full w-full cursor-pointer z-10 opacity-0' type='radio' name='type'></input>
+                    <label className='transition-all ease-in-out duration-300 box-shadow-z rounded-sm border-solid border-[2px] border-[#7c87a0] px-[20px] py-[5px] font-semibold'>MẮT KÍNH</label>
                 </div>
             </form>
             <div>
-                <Slider {...settings}>
+                {loveProducts.length > 0 ? <Slider {...settings}>
                     {loveProducts.map(function(product, index) {
                         return (
                             <div key={product.id} className='w-[90%] h-[450px] mt-[30px] relative lg:basis-1/5 md:basis-1/3 sm:basis-1/3 basis-1/2'>
@@ -106,7 +109,7 @@ function SectionLove() {
                             </div>
                         )
                     })}
-                </Slider>
+                </Slider> : <div className='text-center w-[98%] mx-auto mt-[50px] py-[20px] text-[14px] bg-[#fff3cd]'>Không có sản phẩm phù hợp</div>}
             </div>
         </div>
     )

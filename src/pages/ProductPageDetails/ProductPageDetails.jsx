@@ -131,6 +131,11 @@ useEffect(() => {
             q: account
         }))
     }, [])
+    const getTimestamp = function(date) {
+        var tp = Math.round(Date.parse(date) / 1000);
+        return tp;
+    }
+    const time = new Date().getTime();
     const handlePostComment = async (e) => {
         const dataComment = {
             name: detailsAccount[0].fullName,
@@ -138,11 +143,13 @@ useEffect(() => {
             comments: comments,
             day: `${days.getHours()}:${days.getMinutes()} ${days.getDate()}/${days.getMonth() + 1}/${days.getFullYear()}`,
             img: fileBase64,
-            productId: id
+            productId: id,
+            timez: getTimestamp(new Date(time))
         }
         await evoMilanaApi.postDataCommentrs(dataComment)
         setComments('')
         setFileList([])
+        setFileBase64([])
         toast.success("Đã thêm bình luận", {
             position: "top-right",
             autoClose: 4000,
@@ -154,14 +161,18 @@ useEffect(() => {
             theme: "light",
         });
         dispatch(getAllCommentsThunk({
-            productId: id
+            productId: id,
+            _sort: "timez",
+            _order: "desc"
         }))
     }
     // Xử lý render commnets
     const allComments = useSelector((state) => state.allComments.comments)
     useEffect(() => {
         dispatch(getAllCommentsThunk({
-            productId: id
+            productId: id,
+            _sort: "timez",
+            _order: "desc"
         }))
     }, [])
     const sumArray = function(arr){

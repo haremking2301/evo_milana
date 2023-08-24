@@ -21,7 +21,7 @@ export const loveProductsReducer = createSlice({
     }
 })
 
-export const getDressItemsThunk = createAsyncThunk('get/getDressItemsThunk', async function(key) {
-    const res = await evoMilanaApi.getDataLove(key)
+export const getDressItemsThunk = createAsyncThunk('get/getDressItemsThunk', async function(params) {
+    const res = await evoMilanaApi.getDataLove(params)
     return res
 })
